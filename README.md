@@ -1,5 +1,5 @@
 Description: 
-The motivation for my project is to help gamers find a video game that they can truly enjoy by filtering out and delve into the lore with, with a simple API request.
+The motivation for my project is to help gamers find a video game that they can truly enjoy by filtering through categories with a simple API request.
 
 Tecnologies Used:
 React.js, Node.js
@@ -7,6 +7,11 @@ React.js, Node.js
 Getting Started:
 Filter games by company, platform, etc. and view whatever information you want on the game from character models, to age ratings to artwork
 
+
+
+User Stories: 
+
+As a gamer, I want to be able to search for a game to play through different categories, so I can sift through all the games out there.
 
 Contribution Guidelines:
 
