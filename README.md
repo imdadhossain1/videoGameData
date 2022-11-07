@@ -16,4 +16,4 @@ As a gamer, I want to be able to search for a game to play through different cat
 Contribution Guidelines:
 
 Link to API:
-https://api-docs.igdb.com/#about
+https://api.rawg.io/docs/

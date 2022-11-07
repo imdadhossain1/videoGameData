@@ -11,9 +11,11 @@ export default function Games () {
 
     useEffect(() => {
     const getData = async () => {
-    const response = await axios.get("https://api.rawg.io/api/games?key=19ea189648d04ef2adc585d18f2103c3")
+    const response = await axios.get("https://api.rawg.io/api/games/3498?key=19ea189648d04ef2adc585d18f2103c3")
     console.log(response.data)
 
+    // We need to set state of our data
+    setGames(response.data)
     }
 
     getData()
@@ -21,7 +23,7 @@ export default function Games () {
 }, [])
 
 
-    // We need to set state of our data
+    
 
    
     // We need to see the data
@@ -33,11 +35,12 @@ export default function Games () {
     }
     else {
         
-    
-
     return (
         <div>
-            <h2> Data goes here</h2>
+            <h2> {Games.background_image} </h2>
+            <h2>name: {Games.name}</h2>
+            <h4>rating: {Games.rating}/5</h4>
+            <h5>description: {Games.description_raw} </h5>
         </div>
     )
 }
