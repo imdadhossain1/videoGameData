@@ -37,10 +37,16 @@ export default function Games () {
         
     return (
         <div>
-            <h2> {Games.background_image} </h2>
-            <h2>name: {Games.name}</h2>
-            <h4>rating: {Games.rating}/5</h4>
-            <h5>description: {Games.description_raw} </h5>
+             <div>
+              <img className="gameImage" src={Games.background_image} />
+            </div>
+            <h2>Name: {Games.name}</h2>
+            <h4>Metacritic: {Games.metacritic}/100</h4>
+            <h5>Description: {Games.description_raw} </h5>
+            <h4>Rating of game:</h4>
+            <h5>Platforms the game is available on:{}</h5>
+            <h5>Official website of game: {Games.website} </h5>
+
         </div>
     )
 }

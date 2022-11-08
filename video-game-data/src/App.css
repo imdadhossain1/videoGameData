@@ -1,5 +1,20 @@
+body {
+    background-image:url("VideoGameBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+.gameImage{
+  max-width: 50%;
+  max-height: 50%;
+  border-radius: 85%;
+}
+
+
 .App {
   text-align: center;
+  color:white
 }
 
 .App-logo {
