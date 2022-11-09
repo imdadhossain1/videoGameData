@@ -1,8 +1,20 @@
-body {
+html {
     background-image:url("VideoGameBackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   
+}
+
+#searchButton {
+  background-color: aqua;
+  
+
+}
+
+.searchImage {
+  max-width: 50%;
+  max-height: 50%;
+  border-radius: 85%;
 }
 
 .gameImage{

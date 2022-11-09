@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
+import SearchResults from "./SearchResults";
+
 
 
 export default function Search () {
@@ -8,6 +10,7 @@ export default function Search () {
     const [formState, setFormState] = useState ("");
     const [searchTerm, setSearchTerm] = useState(null);
     const navigate = useNavigate()
+
 
     const handleSubmit=(e)=>{
         e.preventDefault();
@@ -19,17 +22,10 @@ export default function Search () {
         setSearchTerm({...searchTerm, [""]:e.target.value})
         console.log(searchTerm)
     }
+        
 
-    // const getSearch = async () => {
-
-    //     console.log(formState)
-    //     const response = await axios.get(
-
-    //     );
-    //     console.log(response.Game.data);
-
-    //     // setSearch(response.Game.data)
-    // };
+        // setSearch(response.Game.data)
+    
 
     return (
         <div className="search">
@@ -46,21 +42,15 @@ export default function Search () {
             </button>
     
             </form>
-            {/* <div className="searchResults">
-                {search?.map((data) => (
-                    <div key={data.name} className="searchCard">
-                        <h3>Game Title: {data.Games.name} </h3>
-                    </div>
-    
-                    // <div>
-                    // <img className="searchImage"
-                    // src="data.Games.background_image"/>
-                    // </div>
-                ))}
-    
-            </div> */}
-    
+            
+        
+                  
+            
+        
         </div>
+    
+     
+
     )
 
 }
