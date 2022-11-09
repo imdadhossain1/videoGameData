@@ -37,6 +37,8 @@ return results ? (
                     <h3> Release date: {results[0].released}</h3>
 
                     <h3> Genre: {results[0].genres[0].name}</h3>
+
+                    
                     </div>
 
                 </div>

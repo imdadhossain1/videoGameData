@@ -4,9 +4,9 @@ import SearchResults from './SearchResults'
 
 export default function Nav () {
     return (
-        <div>
+        <div className='Links'>
             <Link to = "/"> Home </Link>
-            <Link to = "/Games"> Games </Link>
+            <Link to = "/Games"> Featured Game </Link>
             <Search />
             
 

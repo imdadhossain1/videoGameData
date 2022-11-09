@@ -43,8 +43,6 @@ export default function Games () {
             <h2>Name: {Games.name}</h2>
             <h4>Metacritic: {Games.metacritic}/100</h4>
             <h5>Description: {Games.description_raw} </h5>
-            <h4>Rating of game:</h4>
-            <h5>Platforms the game is available on:{}</h5>
             <h5>Official website of game: {Games.website} </h5>
 
         </div>
